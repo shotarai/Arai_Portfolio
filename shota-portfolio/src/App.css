@@ -1,0 +1,53 @@
+.gnav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.gnav-item a {
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 0;
+    transition: .3s;
+    letter-spacing: .05em;
+    color: #FFFFFF;
+}
+  .gnav-item a:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    content: "";
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+}
+  
+.gnav-item a:hover:after {
+    width: 100%;
+}
+
+
+@font-face {
+    font-family: 'Shippori Mincho Bold';
+    src: url('/fonts/ShipporiMinchoB1-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Shippori Mincho Medium';
+    src: url('/fonts/ShipporiMinchoB1-Medium.ttf') format('truetype');
+  }
+  
+body {
+    font-family: 'Shippori Mincho Medium', serif;
+}
+
+header {
+    font-family: 'Shippori Mincho Bold', serif;
+}
+  
+h1 {
+    font-family: 'Shippori Mincho Bold', serif;
+    font-size: 2.5rem !important;
+}
